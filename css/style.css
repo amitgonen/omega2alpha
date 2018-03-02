@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Alef");
+body {
+  text-align: center;
+  direction: rtl;
+  font-size: 26px;
+  padding-top: 40px;
+  background: #eeab95;
+  font-family: 'Alef', "Open Sans Hebrew", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h2,
+p {
+  margin-bottom: 40px;
+}
