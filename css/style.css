@@ -1,14 +1,116 @@
 @import url("https://fonts.googleapis.com/css?family=Alef");
+:focus {
+  outline: 0px solid transparent !important;
+}
 body {
-  text-align: center;
-  direction: rtl;
   font-size: 26px;
-  padding-top: 40px;
   background: #eeab95;
   font-family: 'Alef', "Open Sans Hebrew", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+body.rtl {
+  direction: rtl;
 }
 h2,
 p {
   margin-bottom: 40px;
+}
+nav {
+  background: #eeab95;
+}
+nav .navbar-brand {
+  font-size: 2rem;
+}
+nav a {
+  color: #000;
+}
+nav > .container {
+  position: relative;
+}
+h2 {
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 5px 0;
+  line-height: 1.5;
+  z-index: 1000;
+}
+.navbar-toggler {
+  z-index: 1001;
+}
+ul.nav {
+  font-size: 1rem;
+  z-index: 1001;
+}
+.ltr ul.nav {
+  margin-left: auto;
+  float: right;
+}
+.rtl ul.nav {
+  margin-right: auto;
+  float: left;
+}
+@media (max-width: 480px) {
+  .en .navbar-toggler {
+    padding: 0px 6px;
+  }
+  .en .navbar-toggler-icon {
+    width: 17px;
+  }
+}
+@media (max-width: 422px) {
+  .en h2 {
+    text-align: left;
+  }
+}
+@media (max-width: 382px) {
+  .en h2 {
+    font-size: 1.6rem;
+    line-height: 1.9;
+  }
+}
+@media (max-width: 360px) {
+  .he .navbar-toggler {
+    padding: 0px 6px;
+  }
+  .he .navbar-toggler-icon {
+    width: 17px;
+  }
+}
+@media (max-width: 460px) {
+  .ru .navbar-toggler {
+    padding: 0px 6px;
+  }
+  .ru .navbar-toggler-icon {
+    width: 17px;
+  }
+}
+@media (max-width: 394px) {
+  .ru h2 {
+    text-align: left;
+  }
+}
+@media (max-width: 357px) {
+  .ru h2 {
+    font-size: 1.75rem;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 377px) {
+  .ru {
+    font-size: 22px;
+  }
+}
+@media (max-width: 370px) {
+  .ar .navbar-toggler {
+    padding: 0px 6px;
+  }
+  .ar .navbar-toggler-icon {
+    width: 17px;
+  }
 }
